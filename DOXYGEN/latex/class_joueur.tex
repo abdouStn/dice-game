@@ -1,0 +1,352 @@
+\hypertarget{class_joueur}{\section{\-Référence de la classe \-Joueur}
+\label{class_joueur}\index{\-Joueur@{\-Joueur}}
+}
+
+
+\-La classe \hyperlink{class_joueur}{\-Joueur} definit l'ensemble des attributs et des actions que peut faire un joueur de dés primés.  
+
+
+
+
+{\ttfamily \#include $<$\-Joueur.\-h$>$}
+
+\subsection*{\-Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_joueur_a77cc168f6bccf04e74a92af097177d77}{\hyperlink{class_joueur_a77cc168f6bccf04e74a92af097177d77}{\-Joueur} (int)}\label{class_joueur_a77cc168f6bccf04e74a92af097177d77}
+
+\begin{DoxyCompactList}\small\item\em \-Constructeur par defaut instancie le joueur en initialisant les attributs par defaut. \end{DoxyCompactList}\item 
+\hyperlink{class_joueur_a1b8ae08199dec8d6d542a6f31d083479}{\-Joueur} (int des, bool h)
+\begin{DoxyCompactList}\small\item\em \-Constructeur instancie le joueur en initialisant les attributs par les valeurs des parametre. \end{DoxyCompactList}\item 
+\hypertarget{class_joueur_a9e63dd20058f8863c919534149eb795e}{\hyperlink{class_joueur_a9e63dd20058f8863c919534149eb795e}{\-Joueur} (const \hyperlink{class_joueur}{\-Joueur} \&j)}\label{class_joueur_a9e63dd20058f8863c919534149eb795e}
+
+\begin{DoxyCompactList}\small\item\em \-Constructeur par copie instancie le joueur par copie d'une autre instance de joueur. \end{DoxyCompactList}\item 
+\hypertarget{class_joueur_a9fb594f755601ee77ce5884c4c0861f3}{\hyperlink{class_joueur_a9fb594f755601ee77ce5884c4c0861f3}{$\sim$\-Joueur} ()}\label{class_joueur_a9fb594f755601ee77ce5884c4c0861f3}
+
+\begin{DoxyCompactList}\small\item\em \-Destructeur detruit l'instance du joueur. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{class_joueur_a5acc4a585392bae5d27e5ff3261ee933}{get\-Nom} () const 
+\begin{DoxyCompactList}\small\item\em renvoie le nom de l'instance joueur \end{DoxyCompactList}\item 
+int \hyperlink{class_joueur_a2b24c871cd5579f40f70e145e73077ba}{get\-Num} () const 
+\begin{DoxyCompactList}\small\item\em renvoie le numero de l'instance joueur \end{DoxyCompactList}\item 
+int \hyperlink{class_joueur_ad28c0904a2a2e171c6a7281fa410cc03}{get\-Nb\-Des} () const 
+\begin{DoxyCompactList}\small\item\em renvoie le nombre de des de l'instance joueur \end{DoxyCompactList}\item 
+int \hyperlink{class_joueur_a87f12641d5012bc9bb34e8a67045b862}{get\-Score} () const 
+\begin{DoxyCompactList}\small\item\em renvoie le score de l'instance joueur \end{DoxyCompactList}\item 
+int \hyperlink{class_joueur_a9ad80d368caf73970ab2640ea85ee603}{get\-Sens} () const 
+\begin{DoxyCompactList}\small\item\em renvoie le sens de l'instance joueur \end{DoxyCompactList}\item 
+int $\ast$ \hyperlink{class_joueur_ac30c162c27a4f09166e912fceff4c65c}{get\-Resultats} () const 
+\begin{DoxyCompactList}\small\item\em renvoie le tableau de resultat de l'instance joueur \end{DoxyCompactList}\item 
+bool \hyperlink{class_joueur_a21814918148ca64e722061812af6b305}{get\-Joueur\-Reel} () const 
+\begin{DoxyCompactList}\small\item\em permet de connaitre le statut du joueur de l'instance joueur (virtuel ou réel ) \end{DoxyCompactList}\item 
+void \hyperlink{class_joueur_afa24ba80453522ff059e7e6f46653749}{set\-Nom} (std\-::string n)
+\begin{DoxyCompactList}\small\item\em permet de modifier le nom de l'instance joueur \end{DoxyCompactList}\item 
+void \hyperlink{class_joueur_acdc63344abd624b4053c3a604df0789f}{set\-Nb\-Des} (int d)
+\begin{DoxyCompactList}\small\item\em permet de modifier le nombre de dés de l'instance joueur \end{DoxyCompactList}\item 
+void \hyperlink{class_joueur_a64402c4935da5cc0dda22c1e4d5bd6c4}{set\-Score} (int s)
+\begin{DoxyCompactList}\small\item\em permet de modifier le score de l'instance joueur \end{DoxyCompactList}\item 
+void \hyperlink{class_joueur_a6a70e7d5fd8fdd206dcfda1a570b9dd1}{set\-Sens} (int s)
+\begin{DoxyCompactList}\small\item\em permet de modifier le sens de l'instance joueur \end{DoxyCompactList}\item 
+\hypertarget{class_joueur_a0c75c574af8cf918215f290014b0a6bd}{void \hyperlink{class_joueur_a0c75c574af8cf918215f290014b0a6bd}{set\-Resultats} ()}\label{class_joueur_a0c75c574af8cf918215f290014b0a6bd}
+
+\begin{DoxyCompactList}\small\item\em permet de modifier les occurences des resultats de l'instance joueur \end{DoxyCompactList}\item 
+void \hyperlink{class_joueur_a2a77491ddd4c4287ab64f7e9ab1cabfc}{set\-Joueur\-Reel} (bool j)
+\begin{DoxyCompactList}\small\item\em permet de changer le statut d'un joueur (humain à virtuel ou inversement ) \end{DoxyCompactList}\item 
+\hypertarget{class_joueur_a5f87ec6d9431d998c82bcf31d9a3b92a}{void \hyperlink{class_joueur_a5f87ec6d9431d998c82bcf31d9a3b92a}{lancer\-Des} (ofstream \&)}\label{class_joueur_a5f87ec6d9431d998c82bcf31d9a3b92a}
+
+\begin{DoxyCompactList}\small\item\em \-Cette fonction permet de lancer les dés, elle modifie ainsi le score et le tableau des occurences des faces de dés. \end{DoxyCompactList}\item 
+void \hyperlink{class_joueur_a72f632a1de976ad4e0a22f51f0b20771}{retirer\-Des} (int nb\-Des\-A\-Retirer, ofstream \&)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction permet de diminuer de \char`\"{}nb\-Des\-A\-Retirer\char`\"{} au nombre de dés de l'instance joueur. \end{DoxyCompactList}\item 
+void \hyperlink{class_joueur_a068e2f9461a02bff06d4194fcd412c8b}{ajouter\-Des} (int nb\-Des\-A\-Ajouter, ofstream \&)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction permet d' augmenter de \char`\"{}nb\-Des\-Ajouter\char`\"{} au nombre de dés de l'instance joueur. \end{DoxyCompactList}\item 
+void \hyperlink{class_joueur_adbc9cb842737c6bc0b59efc28727654d}{ajouter\-Pts} (int nb\-Pts, ofstream \&)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction permet d' incrémenter le score de l'instance joueur. \end{DoxyCompactList}\item 
+void \hyperlink{class_joueur_a693d4e88b0461900258ffb5aab3f7668}{retirer\-Pts} (int nb\-Pts, ofstream \&)
+\begin{DoxyCompactList}\small\item\em \-Cette fonction permet de decrémenter le score de l'instance joueur. \end{DoxyCompactList}\item 
+\hypertarget{class_joueur_a41a37a9c90b06841390352b1e97bf4fc}{void \hyperlink{class_joueur_a41a37a9c90b06841390352b1e97bf4fc}{se\-Presenter} ()}\label{class_joueur_a41a37a9c90b06841390352b1e97bf4fc}
+
+\begin{DoxyCompactList}\small\item\em \-Cette fonction presente le joueur en affichant sonn nom, son numero, son score, son nombre de dés, le sens du jeu. \end{DoxyCompactList}\item 
+\hypertarget{class_joueur_a807b313956e560367bbd44ecfeafff4c}{void \hyperlink{class_joueur_a807b313956e560367bbd44ecfeafff4c}{vider\-Tab} ()}\label{class_joueur_a807b313956e560367bbd44ecfeafff4c}
+
+\begin{DoxyCompactList}\small\item\em \-Cette fonction remet toutes les occurences de tableau de resultats à zero. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Description détaillée}
+\-La classe \hyperlink{class_joueur}{\-Joueur} definit l'ensemble des attributs et des actions que peut faire un joueur de dés primés. 
+
+\subsection{\-Documentation des constructeurs et destructeur}
+\hypertarget{class_joueur_a1b8ae08199dec8d6d542a6f31d083479}{\index{\-Joueur@{\-Joueur}!\-Joueur@{\-Joueur}}
+\index{\-Joueur@{\-Joueur}!Joueur@{\-Joueur}}
+\subsubsection[{\-Joueur}]{\setlength{\rightskip}{0pt plus 5cm}\-Joueur\-::\-Joueur (
+\begin{DoxyParamCaption}
+\item[{int}]{des, }
+\item[{bool}]{h}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a1b8ae08199dec8d6d542a6f31d083479}
+
+
+\-Constructeur instancie le joueur en initialisant les attributs par les valeurs des parametre. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em name} & -\/ nom du joueur \\
+\hline
+{\em num} & -\/ numero du joueur \\
+\hline
+{\em des} & -\/ nombre de dés initial \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{class_joueur_a068e2f9461a02bff06d4194fcd412c8b}{\index{\-Joueur@{\-Joueur}!ajouter\-Des@{ajouter\-Des}}
+\index{ajouter\-Des@{ajouter\-Des}!Joueur@{\-Joueur}}
+\subsubsection[{ajouter\-Des}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Joueur\-::ajouter\-Des} (
+\begin{DoxyParamCaption}
+\item[{int}]{nb\-Des\-A\-Ajouter, }
+\item[{ofstream \&}]{journal}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a068e2f9461a02bff06d4194fcd412c8b}
+
+
+\-Cette fonction permet d' augmenter de \char`\"{}nb\-Des\-Ajouter\char`\"{} au nombre de dés de l'instance joueur. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em nb\-Des\-A\-Ajouter} & -\/ nombre de dés à \-Ajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_adbc9cb842737c6bc0b59efc28727654d}{\index{\-Joueur@{\-Joueur}!ajouter\-Pts@{ajouter\-Pts}}
+\index{ajouter\-Pts@{ajouter\-Pts}!Joueur@{\-Joueur}}
+\subsubsection[{ajouter\-Pts}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Joueur\-::ajouter\-Pts} (
+\begin{DoxyParamCaption}
+\item[{int}]{nb\-Pts, }
+\item[{ofstream \&}]{journal}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_adbc9cb842737c6bc0b59efc28727654d}
+
+
+\-Cette fonction permet d' incrémenter le score de l'instance joueur. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em nb\-Pts} & -\/ nombre de points à ajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a21814918148ca64e722061812af6b305}{\index{\-Joueur@{\-Joueur}!get\-Joueur\-Reel@{get\-Joueur\-Reel}}
+\index{get\-Joueur\-Reel@{get\-Joueur\-Reel}!Joueur@{\-Joueur}}
+\subsubsection[{get\-Joueur\-Reel}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Joueur\-::get\-Joueur\-Reel} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_joueur_a21814918148ca64e722061812af6b305}
+
+
+permet de connaitre le statut du joueur de l'instance joueur (virtuel ou réel ) 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie le statut du joueur de l'instance joueur (virtuel ou réel ) 
+\end{DoxyReturn}
+\hypertarget{class_joueur_ad28c0904a2a2e171c6a7281fa410cc03}{\index{\-Joueur@{\-Joueur}!get\-Nb\-Des@{get\-Nb\-Des}}
+\index{get\-Nb\-Des@{get\-Nb\-Des}!Joueur@{\-Joueur}}
+\subsubsection[{get\-Nb\-Des}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Joueur\-::get\-Nb\-Des} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_joueur_ad28c0904a2a2e171c6a7281fa410cc03}
+
+
+renvoie le nombre de des de l'instance joueur 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie le nombre de des de l'instance joueur 
+\end{DoxyReturn}
+\hypertarget{class_joueur_a5acc4a585392bae5d27e5ff3261ee933}{\index{\-Joueur@{\-Joueur}!get\-Nom@{get\-Nom}}
+\index{get\-Nom@{get\-Nom}!Joueur@{\-Joueur}}
+\subsubsection[{get\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string {\bf \-Joueur\-::get\-Nom} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_joueur_a5acc4a585392bae5d27e5ff3261ee933}
+
+
+renvoie le nom de l'instance joueur 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie le nom de l'instance joueur 
+\end{DoxyReturn}
+\hypertarget{class_joueur_a2b24c871cd5579f40f70e145e73077ba}{\index{\-Joueur@{\-Joueur}!get\-Num@{get\-Num}}
+\index{get\-Num@{get\-Num}!Joueur@{\-Joueur}}
+\subsubsection[{get\-Num}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Joueur\-::get\-Num} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_joueur_a2b24c871cd5579f40f70e145e73077ba}
+
+
+renvoie le numero de l'instance joueur 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie le numero de l'instance joueur 
+\end{DoxyReturn}
+\hypertarget{class_joueur_ac30c162c27a4f09166e912fceff4c65c}{\index{\-Joueur@{\-Joueur}!get\-Resultats@{get\-Resultats}}
+\index{get\-Resultats@{get\-Resultats}!Joueur@{\-Joueur}}
+\subsubsection[{get\-Resultats}]{\setlength{\rightskip}{0pt plus 5cm}int $\ast$ {\bf \-Joueur\-::get\-Resultats} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_joueur_ac30c162c27a4f09166e912fceff4c65c}
+
+
+renvoie le tableau de resultat de l'instance joueur 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie le tableau de resultat de l'instance joueur 
+\end{DoxyReturn}
+\hypertarget{class_joueur_a87f12641d5012bc9bb34e8a67045b862}{\index{\-Joueur@{\-Joueur}!get\-Score@{get\-Score}}
+\index{get\-Score@{get\-Score}!Joueur@{\-Joueur}}
+\subsubsection[{get\-Score}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Joueur\-::get\-Score} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_joueur_a87f12641d5012bc9bb34e8a67045b862}
+
+
+renvoie le score de l'instance joueur 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie le score de l'instance joueur 
+\end{DoxyReturn}
+\hypertarget{class_joueur_a9ad80d368caf73970ab2640ea85ee603}{\index{\-Joueur@{\-Joueur}!get\-Sens@{get\-Sens}}
+\index{get\-Sens@{get\-Sens}!Joueur@{\-Joueur}}
+\subsubsection[{get\-Sens}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Joueur\-::get\-Sens} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_joueur_a9ad80d368caf73970ab2640ea85ee603}
+
+
+renvoie le sens de l'instance joueur 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie le sens de l'instance joueur 
+\end{DoxyReturn}
+\hypertarget{class_joueur_a72f632a1de976ad4e0a22f51f0b20771}{\index{\-Joueur@{\-Joueur}!retirer\-Des@{retirer\-Des}}
+\index{retirer\-Des@{retirer\-Des}!Joueur@{\-Joueur}}
+\subsubsection[{retirer\-Des}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Joueur\-::retirer\-Des} (
+\begin{DoxyParamCaption}
+\item[{int}]{nb\-Des\-A\-Retirer, }
+\item[{ofstream \&}]{journal}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a72f632a1de976ad4e0a22f51f0b20771}
+
+
+\-Cette fonction permet de diminuer de \char`\"{}nb\-Des\-A\-Retirer\char`\"{} au nombre de dés de l'instance joueur. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em nb\-Des\-A\-Retirer} & -\/ nombre de dés à retirer \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a693d4e88b0461900258ffb5aab3f7668}{\index{\-Joueur@{\-Joueur}!retirer\-Pts@{retirer\-Pts}}
+\index{retirer\-Pts@{retirer\-Pts}!Joueur@{\-Joueur}}
+\subsubsection[{retirer\-Pts}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Joueur\-::retirer\-Pts} (
+\begin{DoxyParamCaption}
+\item[{int}]{nb\-Pts, }
+\item[{ofstream \&}]{journal}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a693d4e88b0461900258ffb5aab3f7668}
+
+
+\-Cette fonction permet de decrémenter le score de l'instance joueur. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em nb\-Pts} & -\/ nombre de points à ajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a2a77491ddd4c4287ab64f7e9ab1cabfc}{\index{\-Joueur@{\-Joueur}!set\-Joueur\-Reel@{set\-Joueur\-Reel}}
+\index{set\-Joueur\-Reel@{set\-Joueur\-Reel}!Joueur@{\-Joueur}}
+\subsubsection[{set\-Joueur\-Reel}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Joueur\-::set\-Joueur\-Reel} (
+\begin{DoxyParamCaption}
+\item[{bool}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a2a77491ddd4c4287ab64f7e9ab1cabfc}
+
+
+permet de changer le statut d'un joueur (humain à virtuel ou inversement ) 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em j} & -\/ true pour un joueur \-Réel (humain) \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_acdc63344abd624b4053c3a604df0789f}{\index{\-Joueur@{\-Joueur}!set\-Nb\-Des@{set\-Nb\-Des}}
+\index{set\-Nb\-Des@{set\-Nb\-Des}!Joueur@{\-Joueur}}
+\subsubsection[{set\-Nb\-Des}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Joueur\-::set\-Nb\-Des} (
+\begin{DoxyParamCaption}
+\item[{int}]{d}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_acdc63344abd624b4053c3a604df0789f}
+
+
+permet de modifier le nombre de dés de l'instance joueur 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em n} & -\/ numero de subtitution \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_afa24ba80453522ff059e7e6f46653749}{\index{\-Joueur@{\-Joueur}!set\-Nom@{set\-Nom}}
+\index{set\-Nom@{set\-Nom}!Joueur@{\-Joueur}}
+\subsubsection[{set\-Nom}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Joueur\-::set\-Nom} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{n}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_afa24ba80453522ff059e7e6f46653749}
+
+
+permet de modifier le nom de l'instance joueur 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em n} & -\/ nom de subtitution \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a64402c4935da5cc0dda22c1e4d5bd6c4}{\index{\-Joueur@{\-Joueur}!set\-Score@{set\-Score}}
+\index{set\-Score@{set\-Score}!Joueur@{\-Joueur}}
+\subsubsection[{set\-Score}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Joueur\-::set\-Score} (
+\begin{DoxyParamCaption}
+\item[{int}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a64402c4935da5cc0dda22c1e4d5bd6c4}
+
+
+permet de modifier le score de l'instance joueur 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em n} & -\/ nombre de subtitution \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_joueur_a6a70e7d5fd8fdd206dcfda1a570b9dd1}{\index{\-Joueur@{\-Joueur}!set\-Sens@{set\-Sens}}
+\index{set\-Sens@{set\-Sens}!Joueur@{\-Joueur}}
+\subsubsection[{set\-Sens}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Joueur\-::set\-Sens} (
+\begin{DoxyParamCaption}
+\item[{int}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_joueur_a6a70e7d5fd8fdd206dcfda1a570b9dd1}
+
+
+permet de modifier le sens de l'instance joueur 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em s} & -\/ numero de subtitution \\
+\hline
+\end{DoxyParams}
+
+
+\-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_joueur_8h}{\-Joueur.\-h}\item 
+\hyperlink{_joueur_8cpp}{\-Joueur.\-cpp}\end{DoxyCompactItemize}

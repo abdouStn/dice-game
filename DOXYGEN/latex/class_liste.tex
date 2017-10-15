@@ -1,0 +1,428 @@
+\hypertarget{class_liste}{\section{\-Référence de la classe \-Liste}
+\label{class_liste}\index{\-Liste@{\-Liste}}
+}
+
+
+\-La classe \hyperlink{class_liste}{\-Liste} (doublement chainée) regroupe un certain nombre de cellule de \hyperlink{class_joueur}{\-Joueur} (qu' on appelera \-Place). \-Elle contient les attributs tete, queue et nb\-Element puis les operations ensemblistes.  
+
+
+
+
+{\ttfamily \#include $<$\-Liste.\-h$>$}
+
+\subsection*{\-Types publics}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_liste_a9f1c9ec433aaed02dfed67dad053d463}{typedef \hyperlink{class_cell}{\-Cell} $\ast$ {\bfseries \-Place}}\label{class_liste_a9f1c9ec433aaed02dfed67dad053d463}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_liste_a26368f966a6cfb9d8320603871d9f316}{\hyperlink{class_liste_a26368f966a6cfb9d8320603871d9f316}{\-Liste} ()}\label{class_liste_a26368f966a6cfb9d8320603871d9f316}
+
+\begin{DoxyCompactList}\small\item\em \-Constructeur par defaut instancie la liste de joueurs en initialisant la tete et la queue de liste à \-N\-U\-L\-L et le nombre d'elements à 0. \end{DoxyCompactList}\item 
+\hypertarget{class_liste_a6f56e7818ca43136ec0a9b01a774acba}{{\bfseries \-Liste} (int nb\-Joueur)}\label{class_liste_a6f56e7818ca43136ec0a9b01a774acba}
+
+\item 
+\hypertarget{class_liste_a04be50fd0b3b37110cc36e151a9c945a}{\hyperlink{class_liste_a04be50fd0b3b37110cc36e151a9c945a}{\-Liste} (const \hyperlink{class_liste}{\-Liste} \&\-L)}\label{class_liste_a04be50fd0b3b37110cc36e151a9c945a}
+
+\begin{DoxyCompactList}\small\item\em \-Constructeur par copie instancie la liste de joueurs par copie d'une autre. \end{DoxyCompactList}\item 
+\hypertarget{class_liste_ac9bb3dba05e5884a536e54af86552177}{\hyperlink{class_liste_ac9bb3dba05e5884a536e54af86552177}{$\sim$\-Liste} ()}\label{class_liste_ac9bb3dba05e5884a536e54af86552177}
+
+\begin{DoxyCompactList}\small\item\em \-Destructeur detruit l'instance de la liste de joueurs tout en liberant toute allocation dynamique. \end{DoxyCompactList}\item 
+\hyperlink{class_cell}{\-Place} \hyperlink{class_liste_a0d57237d194d7f97a48bf2003e643d34}{premier} () const 
+\begin{DoxyCompactList}\small\item\em \-Tete de la liste de joueur \-C'est une methohe constante puisqu'elle ne modifie pas l'instance courante. \end{DoxyCompactList}\item 
+\hyperlink{class_cell}{\-Place} \hyperlink{class_liste_a7a8f100182324187f16eb603286b8362}{dernier} () const 
+\begin{DoxyCompactList}\small\item\em \-Queue de la liste de joueur \-C'est une methohe constante puisqu'elle ne modifie pas l'instance courante. \end{DoxyCompactList}\item 
+int \hyperlink{class_liste_a2e1fee9d6e2020048c14fed1328b1768}{taille\-Liste} () const 
+\begin{DoxyCompactList}\small\item\em ta taille la liste de joueur \-C'est une methohe constante puisqu'elle ne modifie pas l'instance courante \end{DoxyCompactList}\item 
+\hyperlink{class_cell}{\-Place} \hyperlink{class_liste_a526d7aa1c8d59a697780577df75f1485}{suivant} (\hyperlink{class_cell}{\-Place} p) const 
+\begin{DoxyCompactList}\small\item\em suivant de la cellule p dans la liste de joueur \-C'est une methohe constante puisqu'elle ne modifie pas l'instance courante \end{DoxyCompactList}\item 
+\hypertarget{class_liste_a0061fbf6df34aa58a2a9a4bff41c0a2b}{\hyperlink{class_cell}{\-Place} {\bfseries precedent} (\hyperlink{class_cell}{\-Place} p) const }\label{class_liste_a0061fbf6df34aa58a2a9a4bff41c0a2b}
+
+\item 
+\hyperlink{class_joueur}{\-Joueur} $\ast$ \hyperlink{class_liste_afde1a3e46b836ef3dfe680ae7061a6be}{le\-Joueur} (\hyperlink{class_cell}{\-Place} p) const 
+\begin{DoxyCompactList}\small\item\em le \hyperlink{class_joueur}{\-Joueur} à la cellule p dans la liste de joueur \-C'est une methohe constante puisqu'elle ne modifie pas l'instance courante \end{DoxyCompactList}\item 
+bool \hyperlink{class_liste_a4c801d79d83bbdea909cfbee51ca9570}{est\-Vide} () const 
+\begin{DoxyCompactList}\small\item\em \-La liste est elle vide? \-C'est une methohe constante puisqu'elle ne modifie pas l'instance courante. \end{DoxyCompactList}\item 
+void \hyperlink{class_liste_ac9f2fbeeaeb6d31e204900db31fde885}{ajout\-Apres} (\hyperlink{class_cell}{\-Place}, \hyperlink{class_joueur}{\-Joueur} $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Ajouter un joueur dans la liste apres celui situé a la \-Place p. \end{DoxyCompactList}\item 
+void \hyperlink{class_liste_a69e508b2b13d64019012b946344ab1ce}{ajout\-Avant} (\hyperlink{class_cell}{\-Place}, \hyperlink{class_joueur}{\-Joueur} $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Ajouter un joueur dans la liste avant celui situé a la \-Place p. \end{DoxyCompactList}\item 
+void \hyperlink{class_liste_ad46abffda844eef6d07cb5aa16e472b8}{ajout\-Debut} (\hyperlink{class_joueur}{\-Joueur} $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Ajouter un joueur au debut de la liste. \end{DoxyCompactList}\item 
+void \hyperlink{class_liste_a1371f5d75a794a090d9fcbbb478d75f6}{ajout\-Fin} (\hyperlink{class_joueur}{\-Joueur} $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Ajouter un joueur a la fin de la liste. \end{DoxyCompactList}\item 
+\hypertarget{class_liste_a770d5a6f4932ded0e2b51872116c8f78}{void \hyperlink{class_liste_a770d5a6f4932ded0e2b51872116c8f78}{vider} ()}\label{class_liste_a770d5a6f4932ded0e2b51872116c8f78}
+
+\begin{DoxyCompactList}\small\item\em vide la liste et libère les allocations de memoire \end{DoxyCompactList}\item 
+void \hyperlink{class_liste_a3532441b8f44bf32478e5e10e51c16e8}{enlever} (\hyperlink{class_cell}{\-Place} p)
+\begin{DoxyCompactList}\small\item\em \-Retire un joueur de la liste. \end{DoxyCompactList}\item 
+bool \hyperlink{class_liste_ab620772bc75880cdd8f514a890db7420}{jeu\-Fini} () const 
+\begin{DoxyCompactList}\small\item\em \-Verifie qu'aucun des joueur n'a un nombre de dés inferieur ou égal a 0. sinon le jeu est fini. \end{DoxyCompactList}\item 
+\hyperlink{class_cell}{\-Place} \hyperlink{class_liste_af387ebfb4a9c626237a92467b99c8336}{recherche\-Joueur} (\hyperlink{class_joueur}{\-Joueur} \&) const 
+\begin{DoxyCompactList}\small\item\em \-Recherche un joueur et renvoie sa \-Place dans la liste. \end{DoxyCompactList}\item 
+void \hyperlink{class_liste_af8c1f90e98973bad385457d869c6d14c}{modif\-Sens} (int s)
+\begin{DoxyCompactList}\small\item\em modifie le sens du jeu en fonction de l'etat d'avancement du jeu \end{DoxyCompactList}\item 
+void \hyperlink{class_liste_a404e1cae936b110849a6a439b65f048f}{\-Definir\-Sens\-Rotation} (\hyperlink{class_cell}{\-Place} j)
+\begin{DoxyCompactList}\small\item\em \-Elle definie au debut du jeu le sens du jeu en fonction des scores des 2 voisins du joueur courant à l'issu du premier lancé de dés. \end{DoxyCompactList}\item 
+\hyperlink{class_joueur}{\-Joueur} $\ast$ \hyperlink{class_liste_a712a92fe898df9af9eadd54f57c69b9e}{le\-Joueur\-Suivant\-Normal} (\hyperlink{class_cell}{\-Place} j)
+\begin{DoxyCompactList}\small\item\em permet de definir celui qui doit jouer juste apres le joueur courant au debut de jeu \end{DoxyCompactList}\item 
+\hyperlink{class_joueur}{\-Joueur} $\ast$ \hyperlink{class_liste_ad22d71eeea5628b092e7579df3ba9685}{le\-Joueur\-Suivant} (\hyperlink{class_cell}{\-Place} j, int i)
+\begin{DoxyCompactList}\small\item\em permet de definir celui qui doit jouer en fonction du nombre de face 4 obtenu par le joueur courant \end{DoxyCompactList}\item 
+int \hyperlink{class_liste_a577a0c06c4daf371d1170da07813346a}{occurence} (\hyperlink{class_cell}{\-Place} \&, \hyperlink{class_liste}{\-Liste} \&l)
+\begin{DoxyCompactList}\small\item\em \-Determine le nombre d'occurence de score les plus élévés au premier round. \end{DoxyCompactList}\item 
+\hyperlink{class_joueur}{\-Joueur} $\ast$ \hyperlink{class_liste_afbf29159bb1128888adc3f4295cf4108}{tous\-Lancer} (ofstream \&)
+\begin{DoxyCompactList}\small\item\em fait lancer à chaque joueur ses dés. \-Elle appelle la methode lancer\-Des() de la classe \hyperlink{class_joueur}{\-Joueur} \end{DoxyCompactList}\item 
+\hypertarget{class_liste_aabc3fff29d275aa61f8ea9716f70ec2d}{void \hyperlink{class_liste_aabc3fff29d275aa61f8ea9716f70ec2d}{tous\-Afficher} () const }\label{class_liste_aabc3fff29d275aa61f8ea9716f70ec2d}
+
+\begin{DoxyCompactList}\small\item\em \-Affiche le profil de chacun des joueurs. \end{DoxyCompactList}\item 
+\hypertarget{class_liste_a51699f909005a2fa17c42126a9a22732}{void \hyperlink{class_liste_a51699f909005a2fa17c42126a9a22732}{reset\-Score} ()}\label{class_liste_a51699f909005a2fa17c42126a9a22732}
+
+\begin{DoxyCompactList}\small\item\em \-Remet les scores des joueur a zero. \end{DoxyCompactList}\item 
+\hypertarget{class_liste_a12f9bfde6f9700a99c59bd02ed163710}{void \hyperlink{class_liste_a12f9bfde6f9700a99c59bd02ed163710}{topscore} (string pseudo, int score)}\label{class_liste_a12f9bfde6f9700a99c59bd02ed163710}
+
+\begin{DoxyCompactList}\small\item\em \-Permet d'inscrire le gagnant de la partie dans le fichier des top 10 si son score le permet et si c'est un humain. \end{DoxyCompactList}\item 
+\hyperlink{class_joueur}{\-Joueur} $\ast$ \hyperlink{class_liste_a75189bf1f888da52c4c6188271574ecb}{gagnant} ()
+\begin{DoxyCompactList}\small\item\em permet de returner le joueur gagant de la partie \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Description détaillée}
+\-La classe \hyperlink{class_liste}{\-Liste} (doublement chainée) regroupe un certain nombre de cellule de \hyperlink{class_joueur}{\-Joueur} (qu' on appelera \-Place). \-Elle contient les attributs tete, queue et nb\-Element puis les operations ensemblistes. 
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{class_liste_ac9f2fbeeaeb6d31e204900db31fde885}{\index{\-Liste@{\-Liste}!ajout\-Apres@{ajout\-Apres}}
+\index{ajout\-Apres@{ajout\-Apres}!Liste@{\-Liste}}
+\subsubsection[{ajout\-Apres}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Liste\-::ajout\-Apres} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Place}}]{p, }
+\item[{{\bf \-Joueur} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_liste_ac9f2fbeeaeb6d31e204900db31fde885}
+
+
+\-Ajouter un joueur dans la liste apres celui situé a la \-Place p. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em p} & -\/ \hyperlink{class_cellule}{\-Cellule} de reference \\
+\hline
+{\em j} & -\/ joueur à ajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_liste_a69e508b2b13d64019012b946344ab1ce}{\index{\-Liste@{\-Liste}!ajout\-Avant@{ajout\-Avant}}
+\index{ajout\-Avant@{ajout\-Avant}!Liste@{\-Liste}}
+\subsubsection[{ajout\-Avant}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Liste\-::ajout\-Avant} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Place}}]{p, }
+\item[{{\bf \-Joueur} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_liste_a69e508b2b13d64019012b946344ab1ce}
+
+
+\-Ajouter un joueur dans la liste avant celui situé a la \-Place p. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em p} & -\/ \hyperlink{class_cellule}{\-Cellule} de reference \\
+\hline
+{\em j} & -\/ joueur à ajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_liste_ad46abffda844eef6d07cb5aa16e472b8}{\index{\-Liste@{\-Liste}!ajout\-Debut@{ajout\-Debut}}
+\index{ajout\-Debut@{ajout\-Debut}!Liste@{\-Liste}}
+\subsubsection[{ajout\-Debut}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Liste\-::ajout\-Debut} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Joueur} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_liste_ad46abffda844eef6d07cb5aa16e472b8}
+
+
+\-Ajouter un joueur au debut de la liste. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em j} & -\/ joueur à ajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_liste_a1371f5d75a794a090d9fcbbb478d75f6}{\index{\-Liste@{\-Liste}!ajout\-Fin@{ajout\-Fin}}
+\index{ajout\-Fin@{ajout\-Fin}!Liste@{\-Liste}}
+\subsubsection[{ajout\-Fin}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Liste\-::ajout\-Fin} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Joueur} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_liste_a1371f5d75a794a090d9fcbbb478d75f6}
+
+
+\-Ajouter un joueur a la fin de la liste. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em j} & -\/ joueur à ajouter \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_liste_a404e1cae936b110849a6a439b65f048f}{\index{\-Liste@{\-Liste}!\-Definir\-Sens\-Rotation@{\-Definir\-Sens\-Rotation}}
+\index{\-Definir\-Sens\-Rotation@{\-Definir\-Sens\-Rotation}!Liste@{\-Liste}}
+\subsubsection[{\-Definir\-Sens\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Liste\-::\-Definir\-Sens\-Rotation} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Place}}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_liste_a404e1cae936b110849a6a439b65f048f}
+
+
+\-Elle definie au debut du jeu le sens du jeu en fonction des scores des 2 voisins du joueur courant à l'issu du premier lancé de dés. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em j} & -\/ \-Le joueur courant \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_liste_a7a8f100182324187f16eb603286b8362}{\index{\-Liste@{\-Liste}!dernier@{dernier}}
+\index{dernier@{dernier}!Liste@{\-Liste}}
+\subsubsection[{dernier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Place} {\bf \-Liste\-::dernier} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_liste_a7a8f100182324187f16eb603286b8362}
+
+
+\-Queue de la liste de joueur \-C'est une methohe constante puisqu'elle ne modifie pas l'instance courante. 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie la queue de la liste de joueur 
+\end{DoxyReturn}
+\hypertarget{class_liste_a3532441b8f44bf32478e5e10e51c16e8}{\index{\-Liste@{\-Liste}!enlever@{enlever}}
+\index{enlever@{enlever}!Liste@{\-Liste}}
+\subsubsection[{enlever}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Liste\-::enlever} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Place}}]{p}
+\end{DoxyParamCaption}
+)}}\label{class_liste_a3532441b8f44bf32478e5e10e51c16e8}
+
+
+\-Retire un joueur de la liste. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em p} & -\/ \-Place du joueur à enlever \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_liste_a4c801d79d83bbdea909cfbee51ca9570}{\index{\-Liste@{\-Liste}!est\-Vide@{est\-Vide}}
+\index{est\-Vide@{est\-Vide}!Liste@{\-Liste}}
+\subsubsection[{est\-Vide}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Liste\-::est\-Vide} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_liste_a4c801d79d83bbdea909cfbee51ca9570}
+
+
+\-La liste est elle vide? \-C'est une methohe constante puisqu'elle ne modifie pas l'instance courante. 
+
+\begin{DoxyReturn}{\-Renvoie}
+true si la liste est vide et false sinon 
+\end{DoxyReturn}
+\hypertarget{class_liste_a75189bf1f888da52c4c6188271574ecb}{\index{\-Liste@{\-Liste}!gagnant@{gagnant}}
+\index{gagnant@{gagnant}!Liste@{\-Liste}}
+\subsubsection[{gagnant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Joueur} $\ast$ {\bf \-Liste\-::gagnant} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_liste_a75189bf1f888da52c4c6188271574ecb}
+
+
+permet de returner le joueur gagant de la partie 
+
+\begin{DoxyReturn}{\-Renvoie}
+\-Renvoie le joueur ayant le score le plus élévé. 
+\end{DoxyReturn}
+\hypertarget{class_liste_ab620772bc75880cdd8f514a890db7420}{\index{\-Liste@{\-Liste}!jeu\-Fini@{jeu\-Fini}}
+\index{jeu\-Fini@{jeu\-Fini}!Liste@{\-Liste}}
+\subsubsection[{jeu\-Fini}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Liste\-::jeu\-Fini} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_liste_ab620772bc75880cdd8f514a890db7420}
+
+
+\-Verifie qu'aucun des joueur n'a un nombre de dés inferieur ou égal a 0. sinon le jeu est fini. 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie true si le jeu est fini sinon false 
+\end{DoxyReturn}
+\hypertarget{class_liste_afde1a3e46b836ef3dfe680ae7061a6be}{\index{\-Liste@{\-Liste}!le\-Joueur@{le\-Joueur}}
+\index{le\-Joueur@{le\-Joueur}!Liste@{\-Liste}}
+\subsubsection[{le\-Joueur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Joueur} $\ast$ {\bf \-Liste\-::le\-Joueur} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Place}}]{p}
+\end{DoxyParamCaption}
+) const}}\label{class_liste_afde1a3e46b836ef3dfe680ae7061a6be}
+
+
+le \hyperlink{class_joueur}{\-Joueur} à la cellule p dans la liste de joueur \-C'est une methohe constante puisqu'elle ne modifie pas l'instance courante 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie un pointeur vers le joueur situé à la cellule p dans la liste de joueur 
+\end{DoxyReturn}
+\hypertarget{class_liste_ad22d71eeea5628b092e7579df3ba9685}{\index{\-Liste@{\-Liste}!le\-Joueur\-Suivant@{le\-Joueur\-Suivant}}
+\index{le\-Joueur\-Suivant@{le\-Joueur\-Suivant}!Liste@{\-Liste}}
+\subsubsection[{le\-Joueur\-Suivant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Joueur} $\ast$ {\bf \-Liste\-::le\-Joueur\-Suivant} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Place}}]{j, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{class_liste_ad22d71eeea5628b092e7579df3ba9685}
+
+
+permet de definir celui qui doit jouer en fonction du nombre de face 4 obtenu par le joueur courant 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em j} & -\/ le joueur courant \\
+\hline
+{\em i} & -\/ nombre de face 4 obtenue et donc nombre de fois qu'il faut faire suivre le joueur suivant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+\-Renvoie un pointeur vers le joueur suivant correspondant 
+\end{DoxyReturn}
+\hypertarget{class_liste_a712a92fe898df9af9eadd54f57c69b9e}{\index{\-Liste@{\-Liste}!le\-Joueur\-Suivant\-Normal@{le\-Joueur\-Suivant\-Normal}}
+\index{le\-Joueur\-Suivant\-Normal@{le\-Joueur\-Suivant\-Normal}!Liste@{\-Liste}}
+\subsubsection[{le\-Joueur\-Suivant\-Normal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Joueur} $\ast$ {\bf \-Liste\-::le\-Joueur\-Suivant\-Normal} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Place}}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_liste_a712a92fe898df9af9eadd54f57c69b9e}
+
+
+permet de definir celui qui doit jouer juste apres le joueur courant au debut de jeu 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em j} & -\/ le joueur courant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+\-Renvoie un pointeur vers le joueur suivant 
+\end{DoxyReturn}
+\hypertarget{class_liste_af8c1f90e98973bad385457d869c6d14c}{\index{\-Liste@{\-Liste}!modif\-Sens@{modif\-Sens}}
+\index{modif\-Sens@{modif\-Sens}!Liste@{\-Liste}}
+\subsubsection[{modif\-Sens}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Liste\-::modif\-Sens} (
+\begin{DoxyParamCaption}
+\item[{int}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_liste_af8c1f90e98973bad385457d869c6d14c}
+
+
+modifie le sens du jeu en fonction de l'etat d'avancement du jeu 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em s} & -\/ le sens a definir (1 -\/ sens des aiguilles d'une montre 2 -\/ sens contraire ) \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_liste_a577a0c06c4daf371d1170da07813346a}{\index{\-Liste@{\-Liste}!occurence@{occurence}}
+\index{occurence@{occurence}!Liste@{\-Liste}}
+\subsubsection[{occurence}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Liste\-::occurence} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Place} \&}]{j\-Courant, }
+\item[{{\bf \-Liste} \&}]{l}
+\end{DoxyParamCaption}
+)}}\label{class_liste_a577a0c06c4daf371d1170da07813346a}
+
+
+\-Determine le nombre d'occurence de score les plus élévés au premier round. 
+
+\-T\-O\-D\-O
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em p} & -\/ le joueur courant \\
+\hline
+{\em i} & -\/ nombre de face 4 obtenue et donc nombre de fois qu'il faut faire suivre le joueur suivant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+le nombre d'occurence 
+\end{DoxyReturn}
+\hypertarget{class_liste_a0d57237d194d7f97a48bf2003e643d34}{\index{\-Liste@{\-Liste}!premier@{premier}}
+\index{premier@{premier}!Liste@{\-Liste}}
+\subsubsection[{premier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Place} {\bf \-Liste\-::premier} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_liste_a0d57237d194d7f97a48bf2003e643d34}
+
+
+\-Tete de la liste de joueur \-C'est une methohe constante puisqu'elle ne modifie pas l'instance courante. 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie la \-Tete de la liste de joueur 
+\end{DoxyReturn}
+\hypertarget{class_liste_af387ebfb4a9c626237a92467b99c8336}{\index{\-Liste@{\-Liste}!recherche\-Joueur@{recherche\-Joueur}}
+\index{recherche\-Joueur@{recherche\-Joueur}!Liste@{\-Liste}}
+\subsubsection[{recherche\-Joueur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Place} {\bf \-Liste\-::recherche\-Joueur} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Joueur} \&}]{j}
+\end{DoxyParamCaption}
+) const}}\label{class_liste_af387ebfb4a9c626237a92467b99c8336}
+
+
+\-Recherche un joueur et renvoie sa \-Place dans la liste. 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em j} & -\/ le joueur a rechercher \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+renvoie sa \-Place dans la liste 
+\end{DoxyReturn}
+\hypertarget{class_liste_a526d7aa1c8d59a697780577df75f1485}{\index{\-Liste@{\-Liste}!suivant@{suivant}}
+\index{suivant@{suivant}!Liste@{\-Liste}}
+\subsubsection[{suivant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Place} {\bf \-Liste\-::suivant} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Place}}]{p}
+\end{DoxyParamCaption}
+) const}}\label{class_liste_a526d7aa1c8d59a697780577df75f1485}
+
+
+suivant de la cellule p dans la liste de joueur \-C'est une methohe constante puisqu'elle ne modifie pas l'instance courante 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie la \-Place du suivant de la cellule p dans la liste de joueur 
+\end{DoxyReturn}
+\hypertarget{class_liste_a2e1fee9d6e2020048c14fed1328b1768}{\index{\-Liste@{\-Liste}!taille\-Liste@{taille\-Liste}}
+\index{taille\-Liste@{taille\-Liste}!Liste@{\-Liste}}
+\subsubsection[{taille\-Liste}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Liste\-::taille\-Liste} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_liste_a2e1fee9d6e2020048c14fed1328b1768}
+
+
+ta taille la liste de joueur \-C'est une methohe constante puisqu'elle ne modifie pas l'instance courante 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie la taille de la liste de joueur 
+\end{DoxyReturn}
+\hypertarget{class_liste_afbf29159bb1128888adc3f4295cf4108}{\index{\-Liste@{\-Liste}!tous\-Lancer@{tous\-Lancer}}
+\index{tous\-Lancer@{tous\-Lancer}!Liste@{\-Liste}}
+\subsubsection[{tous\-Lancer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Joueur} $\ast$ {\bf \-Liste\-::tous\-Lancer} (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{journal}
+\end{DoxyParamCaption}
+)}}\label{class_liste_afbf29159bb1128888adc3f4295cf4108}
+
+
+fait lancer à chaque joueur ses dés. \-Elle appelle la methode lancer\-Des() de la classe \hyperlink{class_joueur}{\-Joueur} 
+
+\begin{DoxyReturn}{\-Renvoie}
+\-Renvoie en meme temps le joueur qui doit jouer c.\-a.\-d le lauréat 
+\end{DoxyReturn}
+
+
+\-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_liste_8h}{\-Liste.\-h}\item 
+\-Liste.\-cpp\end{DoxyCompactItemize}

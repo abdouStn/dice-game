@@ -1,0 +1,144 @@
+\hypertarget{class_cell}{\section{\-Référence de la classe \-Cell}
+\label{class_cell}\index{\-Cell@{\-Cell}}
+}
+\subsection*{\-Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_cell_a394510643e8664cf12b5efaf5cb99f71}{\hyperlink{class_cell_a394510643e8664cf12b5efaf5cb99f71}{\-Cell} ()}\label{class_cell_a394510643e8664cf12b5efaf5cb99f71}
+
+\begin{DoxyCompactList}\small\item\em \-Constructeur par defaut . \-Tous les pointeurs à \-N\-U\-L\-L. \end{DoxyCompactList}\item 
+\hyperlink{class_cell_a3ece9c0b7e86315dd22ecb51c80bb781}{\-Cell} (\hyperlink{class_joueur}{\-Joueur} $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Constructeur. \-Le joueur est initialisé \end{DoxyCompactList}\item 
+\hyperlink{class_joueur}{\-Joueur} $\ast$ \hyperlink{class_cell_a2d28662bf2f0347378402022e87428cf}{get\-Joueur} () const 
+\begin{DoxyCompactList}\small\item\em renvoie un pointeur vers le joueur contenu dans la cellule \end{DoxyCompactList}\item 
+\hyperlink{class_cell}{\-Cell} $\ast$ \hyperlink{class_cell_a4386393b73e6235fd94735e21c6f551c}{get\-Suiv} () const 
+\begin{DoxyCompactList}\small\item\em renvoie un pointeur vers le suivant du joueur contenu dans la cellule \end{DoxyCompactList}\item 
+\hyperlink{class_cell}{\-Cell} $\ast$ \hyperlink{class_cell_afe67fb42e896d2f67b2893e8099a8037}{get\-Prec} () const 
+\begin{DoxyCompactList}\small\item\em renvoie un pointeur vers le precedent du joueur contenu dans la cellule \end{DoxyCompactList}\item 
+void \hyperlink{class_cell_adbfdc0b15be25b7fba044477edcaaa43}{set\-Joueur} (\hyperlink{class_joueur}{\-Joueur} $\ast$)
+\begin{DoxyCompactList}\small\item\em permet de modifier le joueur contenu dans la cellule \end{DoxyCompactList}\item 
+void \hyperlink{class_cell_a7ca4637ee7d04333c3ddfcafeeaa6499}{set\-Suiv} (\hyperlink{class_cell}{\-Cell} $\ast$)
+\begin{DoxyCompactList}\small\item\em permet de modifier le suivant du joueur contenu dans la cellule \end{DoxyCompactList}\item 
+void \hyperlink{class_cell_a89f7e54469c832f407df3fe12352654e}{set\-Prec} (\hyperlink{class_cell}{\-Cell} $\ast$)
+\begin{DoxyCompactList}\small\item\em permet de modifier le precedent du joueur contenu dans la cellule \end{DoxyCompactList}\item 
+\hypertarget{class_cell_a9678ee6c82aa0f24b9d52a3d52d321f6}{ostream \& {\bfseries afficher} (ostream \&) const }\label{class_cell_a9678ee6c82aa0f24b9d52a3d52d321f6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Documentation des constructeurs et destructeur}
+\hypertarget{class_cell_a3ece9c0b7e86315dd22ecb51c80bb781}{\index{\-Cell@{\-Cell}!\-Cell@{\-Cell}}
+\index{\-Cell@{\-Cell}!Cell@{\-Cell}}
+\subsubsection[{\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cell\-::\-Cell} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Joueur} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_cell_a3ece9c0b7e86315dd22ecb51c80bb781}
+
+
+\-Constructeur. \-Le joueur est initialisé 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em j} & -\/ le joueur à initialiser \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{class_cell_a2d28662bf2f0347378402022e87428cf}{\index{\-Cell@{\-Cell}!get\-Joueur@{get\-Joueur}}
+\index{get\-Joueur@{get\-Joueur}!Cell@{\-Cell}}
+\subsubsection[{get\-Joueur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Joueur} $\ast$ {\bf \-Cell\-::get\-Joueur} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_cell_a2d28662bf2f0347378402022e87428cf}
+
+
+renvoie un pointeur vers le joueur contenu dans la cellule 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie un pointeur vers le joueur contenu dans la cellule 
+\end{DoxyReturn}
+\hypertarget{class_cell_afe67fb42e896d2f67b2893e8099a8037}{\index{\-Cell@{\-Cell}!get\-Prec@{get\-Prec}}
+\index{get\-Prec@{get\-Prec}!Cell@{\-Cell}}
+\subsubsection[{get\-Prec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cell} $\ast$ {\bf \-Cell\-::get\-Prec} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_cell_afe67fb42e896d2f67b2893e8099a8037}
+
+
+renvoie un pointeur vers le precedent du joueur contenu dans la cellule 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie un pointeur vers le precedent du joueur contenu dans la cellule 
+\end{DoxyReturn}
+\hypertarget{class_cell_a4386393b73e6235fd94735e21c6f551c}{\index{\-Cell@{\-Cell}!get\-Suiv@{get\-Suiv}}
+\index{get\-Suiv@{get\-Suiv}!Cell@{\-Cell}}
+\subsubsection[{get\-Suiv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Cell} $\ast$ {\bf \-Cell\-::get\-Suiv} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_cell_a4386393b73e6235fd94735e21c6f551c}
+
+
+renvoie un pointeur vers le suivant du joueur contenu dans la cellule 
+
+\begin{DoxyReturn}{\-Renvoie}
+renvoie un pointeur vers le suivant du joueur contenu dans la cellule 
+\end{DoxyReturn}
+\hypertarget{class_cell_adbfdc0b15be25b7fba044477edcaaa43}{\index{\-Cell@{\-Cell}!set\-Joueur@{set\-Joueur}}
+\index{set\-Joueur@{set\-Joueur}!Cell@{\-Cell}}
+\subsubsection[{set\-Joueur}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Cell\-::set\-Joueur} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Joueur} $\ast$}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_cell_adbfdc0b15be25b7fba044477edcaaa43}
+
+
+permet de modifier le joueur contenu dans la cellule 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em j} & -\/ parametre à modifier \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_cell_a89f7e54469c832f407df3fe12352654e}{\index{\-Cell@{\-Cell}!set\-Prec@{set\-Prec}}
+\index{set\-Prec@{set\-Prec}!Cell@{\-Cell}}
+\subsubsection[{set\-Prec}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Cell\-::set\-Prec} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cell} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_cell_a89f7e54469c832f407df3fe12352654e}
+
+
+permet de modifier le precedent du joueur contenu dans la cellule 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em c} & -\/ parametre à modifier \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_cell_a7ca4637ee7d04333c3ddfcafeeaa6499}{\index{\-Cell@{\-Cell}!set\-Suiv@{set\-Suiv}}
+\index{set\-Suiv@{set\-Suiv}!Cell@{\-Cell}}
+\subsubsection[{set\-Suiv}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Cell\-::set\-Suiv} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Cell} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{class_cell_a7ca4637ee7d04333c3ddfcafeeaa6499}
+
+
+permet de modifier le suivant du joueur contenu dans la cellule 
+
+
+\begin{DoxyParams}{\-Paramètres}
+{\em c} & -\/ parametre à modifier \\
+\hline
+\end{DoxyParams}
+
+
+\-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cellule_8h}{\-Cellule.\-h}\item 
+\-Cellule.\-cpp\end{DoxyCompactItemize}
