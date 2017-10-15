@@ -23,6 +23,14 @@ A personal project that falls within the course named "GLIN403 Programmation imp
         make clean
 
 ### CONCEPTS
+  C++ programming language
+  
+  Object-oriented programming
+
+  Pointers
+
+  Algorithmic data structures (arrays, lists, stacks, queues, hash tables, operators overload ...)
+
 
   See states in: files/ennonce.pdf
 
